@@ -23,7 +23,11 @@ return (
             </div>
         </div>
         <div style={{ display: 'flex'}}>
-            {ceo && ceo.employees.map((managerData) => (
+            {ceo && ceo.employees.sort(function(a, b){
+                if(a.name < b.name) { return -1; }
+                if(a.name > b.name) { return 1; }
+                return 0;
+            }).map((managerData) => (
             <div key={managerData.managerId} style={{ marginLeft: '5px', marginRight: '5px' }}>
                 <div className="emp-tree-manager-section" style={{borderBottom: `4px solid ${managerData.bgColor}`}}>
                     <img className="emp-tree-manager-logo" src={managerLogo} width= "25%"/>
