@@ -17,6 +17,7 @@ const App = () => {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => {
+        //if the status is 200 (success),setting our own mock data
         if(response.status === 200) {
           const mockEmployees = [
             { id: 1, name: 'Ragav', designation: 'CEO', bgColor: "#aaaaaa" },
