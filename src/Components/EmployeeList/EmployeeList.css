@@ -1,0 +1,100 @@
+.employee-table {
+    border-collapse: collapse;
+    box-shadow: 0px 0px 8px #000000;
+    font-family: math;
+    background-color: #525252;
+    max-height: 86vh;
+    /* overflow-y: auto; */
+    display: block;
+    color: #dddddd;
+    border-radius: 5px;
+}
+
+.search-box:focus {
+    border: 2px solid #b7b7b7;
+}
+
+.left-part-main-div {
+    margin-left: 40px;
+    margin-right: 55px;
+    width: 50%;
+    color: #dddddd;
+}
+
+.left-part-employee-details-text {
+    font-weight: bold;
+}
+
+.search-box {
+    height: 25px;
+    width: 65%;
+    outline: none;
+    border: 2px solid #dddddd;
+    border-radius: 2px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+    background: #dddddd;
+}
+
+.teams-dropDown {
+    height: 30px;
+    border: 2px solid #dddddd;
+    border-radius: 2px;
+    width: 30%;
+    font-family: sans-serif;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.15);
+    background: #dddddd;
+}
+
+.searchBar-drpDown {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 15px 0px;
+}
+
+.employee-table-header {
+    background-color: #a0a0a0;
+    color: #363636;
+    display: grid;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.employee-table th,
+.employee-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-table-tbody {
+    display: grid;
+    max-height: 79vh;
+    overflow-y: auto;
+}
+
+.employee-table tr {
+    border-bottom: 1px solid #dddddd;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.employee-table-tbody::-webkit-scrollbar {
+    width: 5px;
+}
+
+.employee-table-tbody::-webkit-scrollbar-track {
+    background-color: #525252;
+}
+
+.employee-table-tbody::-webkit-scrollbar-thumb {
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+}
+
+.zoom-row {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-row:hover {
+    background-color: #e8e22a;
+    color: #000000;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+}
