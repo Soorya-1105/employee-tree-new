@@ -41,7 +41,11 @@ return (
                 </tr>
             </thead>
             <tbody className="employee-table-tbody">
-            {employees.map((employee, index) => (
+            {employees.sort(function(a, b){
+                if(a.name < b.name) { return -1; }
+                if(a.name > b.name) { return 1; }
+                return 0;
+            }).map((employee, index) => (
                 <tr key={index} className="zoom-row">
                     <td>{employee.name}</td>
                     <td>{employee.designation}</td>
